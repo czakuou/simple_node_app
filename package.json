@@ -1,16 +1,19 @@
 {
-  "name": "node_simple_app",
-  "version": "1.0.0",
+  "author": "",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
   "description": "",
+  "devDependencies": {
+    "eslint": "^8.6.0"
+  },
+  "keywords": [],
+  "license": "ISC",
   "main": "index.js",
+  "name": "node_simple_app",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.2"
-  }
+  "version": "1.0.0"
 }
