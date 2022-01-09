@@ -1,0 +1,25 @@
+version: '3.9'
+
+services:
+  app:
+    build:
+      context: .
+    ports:
+      - 3000:3000
+    environment:
+      - DATABASE_URL=mongodb://mongo:27017/notes
+    volumes:
+      - ./:/app
+    command: npm start
+
+  mongo:
+    image: mongo:4.2.8
+    ports:
+     - 27017:27017
+    volumes:
+      - mongodb:/data/db
+      - mongodb_config:/data/configdb
+
+volumes:
+  mongodb:
+  mongodb_config:
