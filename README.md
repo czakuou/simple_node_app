@@ -10,6 +10,10 @@ Make sure you have Docker installed on your machine
 
 `make app-start`
 
+#### To stop the project type
+
+`make app-stop`
+
 ## install pre-commit
 
 ### If you want to make a commit you have to install pre-commit hooks

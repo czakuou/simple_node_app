@@ -1,8 +1,13 @@
+COMPOSE_DEV=docker-compose -f docker-compose.dev.yml
+
 commit:
 	pre-commit run --all-files
 
 docker-compose:
-	docker-compose -f docker-compose.dev.yml up --build
+	${COMPOSE_DEV} up --build
 
 app-start:
-	docker-compose -f docker-compose.dev.yml up
+	${COMPOSE_DEV} up -d
+
+app-stop:
+	${COMPOSE_DEV} down
