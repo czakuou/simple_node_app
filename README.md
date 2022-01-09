@@ -1,14 +1,14 @@
 # Simple Node APP with Express
 
-Make sure you have Node installed on your machine
+Make sure you have Docker installed on your machine
 
 #### To start project for first time and install all dependencies type in terminal
 
-`make set-up`
+`make docker-compose`
 
 #### To just run the project type in terminal
 
-`npm start`
+`make app-start`
 
 ## install pre-commit
 
